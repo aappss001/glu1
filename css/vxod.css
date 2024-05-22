@@ -1,0 +1,60 @@
+body {
+  background-image: url(https://cdn.iz.ru/sites/default/files/styles/1920x1080/public/article-2023-07/_KKP6135.jpg?itok=5xL2WlEO);
+  background-size: cover; 
+  background-position: center; 
+}
+.form-container {
+  max-width: 400px;
+margin: 200px auto 0; /* 100px - отступ сверху, auto - автоматическое центрирование по горизонтали, 0 - отступ снизу */
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: #ffffffbb; /* Цвет фона формы */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input, button {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+img{
+width: 200px;
+height: 190px;
+opacity: 0.4;
+position: absolute;
+top: 20px;
+left: 20px;
+}
+
+h2{
+  text-align: center;
+}
+
+img{
+  border-radius: 100px;
+
+}

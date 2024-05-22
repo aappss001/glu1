@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Самокат.Go - Бронирование</title>
+    <link rel="stylesheet" href="css/bron.css">
+</head>
+<body>
+    <header>
+        <img src="images\img/logo.png" alt="Пример изображения">
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="profil.html">Личный Кабинет</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="booking">
+            <h1>Бронирование</h1>
+            <div class="booking-container">
+                <div class="product">
+                    <img src="images/222.png" alt="Электросамокат Xiaomi HIMO L2">
+                    <p>Аренда электросамоката Xiaomi HIMO L2</p>
+                </div>
+                <div class="booking-details">
+                    <div class="booking-period">
+                        <label for="period">Выберите период бронирования:</label>
+                        <input type="text" id="period" value="01.01.2023 8:00 - 01.01.2023 9:00" readonly>
+                        <p>6 часов</p>
+                    </div>
+                    <div class="delivery">
+                        <label>Доставка*:</label>
+                        <input type="checkbox" id="delivery" name="delivery">
+                        <label for="delivery">Самовывоз: ул. Пушкина 30 г. Абакан (бесплатно)</label>
+                    </div>
+                    <div class="pricing">
+                        <div class="price">
+                            <p>1 час: 350Р/час</p>
+                            <p>6 часов: 133Р/час</p>
+                            <p>24 часа: 50Р/час</p>
+                        </div>
+                        <div class="total">
+                            <p>Цена за услуги: 800Р</p>
+                            <p>Выгода: 130Р</p>
+                            <p>Итоговая сумма: 870Р</p>
+                            <button>Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rental-points">
+            <h2>Точки проката</h2>
+            <img src="images/111.png" alt="Карта точек проката">
+        </section>
+    </main>
+    
+    <footer>
+        <div class="contacts">
+            <p>Контакты</p>
+            <p>8(800)1 111-11-11</p>
+            <p>655004, Россия, г. Абакан, Пушкина 30</p>
+            <p>Почта: samokat.go@mail.ru</p>
+        </div>
+        <div class="links">
+            <a href="#">Партнерская программа / Платформа</a>
+            <a href="#">ООО "Самокаты"</a>
+            <a href="#">Реквизиты организации</a>
+        </div>
+        <div class="recent-posts">
+            <p>Свежие записи</p>
+            <ul>
+                <li><a href="#">Кредит ЛАД</a></li>
+                <li><a href="#">Льготы от ГИБДД</a></li>
+                <li><a href="#">Кто может стать партнёром?</a></li>
+                <li><a href="#">Возврат денежных средств</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

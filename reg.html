@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Регистрация</h2>
+        <form>
+          <label for="first-name">Имя:</label>
+          <input type="text" id="first-name" name="first-name" required>
+          
+          <label for="last-name">Фамилия:</label>
+          <input type="text" id="last-name" name="last-name" required>
+          
+          <label for="email">Почта:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Например, 7(000)-000-00-00" required>
+          
+          <label for="login">Логин (только английские буквы):</label>
+          <input type="text" id="login" name="login" pattern="[A-Za-z0-9]+" title="Логин должен содержать только английские буквы и цифры" required>
+          
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" minlength="8" required>
+          
+          <label for="confirm-password">Повторите пароль:</label>
+          <input type="password" id="confirm-password" name="confirm-password" minlength="8" required>
+          
+          <button type="submit">Зарегистрироваться</button>
+        </form>
+      </div>
+      <img src="images\img/logo.png" alt="Пример изображения">
+    <script src="script1.js"></script>
+</body>
+</html>

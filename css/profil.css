@@ -1,0 +1,282 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+img {
+    height: 100px;
+    display: flex;
+}
+header {
+    background-color: #e53935;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.profile {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.profile h1 {
+    text-align: center;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-info .avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info .details p {
+    margin: 5px 0;
+}
+
+.text {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.account-info {
+    display: flex;
+    justify-content: center; /* Центрирование элементов по горизонтали */
+    align-items: center; /* Центрирование элементов по вертикали */
+    gap: 20px; /* Отступ между элементами */
+    width: 500px;
+    margin-top: 20px;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%); /* Центрирование по горизонтали */
+    padding: 10px;
+}
+
+.account-info div {
+    flex: 1;
+    text-align: center;
+}
+
+.account-info p {
+    margin: 0; /* Убираем стандартные отступы */
+}
+
+.links {
+    color: white;
+    text-decoration: none;
+}
+
+.account-info p:first-of-type {
+    margin-right: 80px;
+}
+
+.booking-history {
+    text-align: center;
+    display: block;
+    margin-top: 100px;
+}
+
+footer {
+    background-color: #424242;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .contacts,
+footer .links,
+footer .recent-posts {
+    width: 30%;
+}
+
+footer .contacts p,
+footer .links a,
+footer .recent-posts ul {
+    margin: 5px 0;
+}
+
+footer .recent-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .recent-posts ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.details { 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.details p {
+    margin: 0; /* Удаляем стандартные отступы */
+}
+
+@media (max-width: 1024px) {
+    .profile-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-info .avatar {
+        margin: 0 0 20px 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .account-info {
+        flex-direction: row;
+        width: 100%;
+        max-width: none;
+        padding: 0 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .contacts,
+    footer .links,
+    footer .recent-posts {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .account-info {
+        flex-direction: column; 
+        top: auto;
+        left: auto;
+        transform: none;
+        position: static;
+    }
+
+    .account-info div {
+        margin-bottom: 10px;
+    }
+    
+        .account-info {
+            width: 100%; 
+            position: static;
+            transform: none; 
+            flex-direction: column; 
+        }
+    
+        .account-info div {
+            width: 100%; 
+            text-align: center; 
+            margin-bottom: 10px; 
+        }
+    .booking-history {
+        text-align: center;
+        position: relative;
+        display: contents;
+        margin-left: 240px;
+        margin-top: 43px;
+    }
+
+    .booking-history h2 {
+        font-size: 1.5em; 
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .profile-info {
+        flex-direction: column;
+    }
+
+    .profile-info .avatar {
+        margin: 0 0 20px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .contacts,
+    footer .links,
+    footer .recent-posts {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+ 
+}
+
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    header .logo {
+        margin-bottom: 10px;
+    }
+
+    .profile-info .details p {
+        text-align: center;
+    }
+}
+
+
+}

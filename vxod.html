@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/vxod.css">
+    <title>log</title>
+</head>
+<body>
+    <div class="header">
+        <img src="images\img/logo.png" class="logo" alt="Логотип">
+    </div>
+    <div class="form-container">
+        <h2>Вход</h2>
+        <form>
+          <label for="login">Логин:</label>
+          <input type="text" id="login" name="login" required>
+          
+          <label for="password">Пароль:</label>
+          <input type="password" id="password" name="password" required>
+          
+          <div class="remember-me">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Запомнить меня</label>
+          </div>
+          
+          <button type="submit">Войти</button>
+          <button class="svg_button" onclick="window.location.href = 'reg.html'">Регистрация</button>
+
+        </form>
+      </div>
+</body>
+</html>
